@@ -1,5 +1,5 @@
-# Iniciando con Git / Github
-Curso de fullstack     -  Codigo Tepsup
+# Curso de FullStack en Codigo
+
 ### Semana 1
 - Clase 1   
     - Git / Githud
