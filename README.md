@@ -8,3 +8,6 @@ Curso de fullstack     -  Codigo Tepsup
     - git status -  para saber el estado de tus avances
     - git log - para poder visualizar tu historail de cambios o avance
 - Clase 2
+    - HTML
+    - Se agrego index.html
+    - Se agrego algunas etiquetas h1,h2,etc y img y se agrego algunas imagenes
