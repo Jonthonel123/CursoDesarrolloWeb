@@ -1,82 +1,146 @@
-body{
-    font-family: 'Poppins', sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body {
+  font-family: "Poppins", sans-serif;
 }
-.product_cell{
-    border: 2px solid blue; 
-    border-radius: 10px; 
-    padding: 10px;
-    margin: 0 10px;
+.product_cell {
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
 }
-.laptop > h2{
-    color: blue;
+.laptop > h2 {
+  color: blue;
 }
-.laptop > h3{
-    color: cadetblue;
-    text-align: right;
-    padding-right: 10px;
+.laptop > h3 {
+  color: cadetblue;
+  text-align: right;
+  padding-right: 10px;
 }
-.celular > h2{
-    color: red;
+.celular > h2 {
+  color: red;
 }
-.celular > h3{
-    color: blueviolet;
-    text-align: center;
-    font-size: 24px;
-    
+.celular > h3 {
+  color: blueviolet;
+  text-align: center;
+  font-size: 24px;
 }
-.audifonos > h2{
-    color: green;
+.audifonos > h2 {
+  color: green;
 }
-.audifonos > h3{
-    color: aqua ;
-    text-align: right;
-    font-size: 24px;
+.audifonos > h3 {
+  color: aqua;
+  text-align: right;
+  font-size: 24px;
 }
-.bar{
-    width: 100%;
-    height: 2px;
-    background: black;
+.bar {
+  width: 100%;
+  height: 2px;
+  background: black;
 }
-.product_cell:hover{
-    border: 1px solid brown;
-    box-shadow: 0px 0px 10px brown;
-    cursor: grab;
+.product_cell:hover {
+  border: 1px solid brown;
+  box-shadow: 0px 0px 10px brown;
+  cursor: grab;
 }
-.product_cell:hover > img{
-    opacity: 0.5;
-    border: 1px solid black;
+.product_cell:hover > img {
+  opacity: 0.5;
+  border: 1px solid black;
 }
 /* Estilos para el formulario */
-.div_form{
-    width: 400px;
-    margin: 20px auto;
+.div_form {
+  width: 400px;
+  margin: 20px auto;
 }
-.div_form > form > input{
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    width: 70%;
-    font-size: 24px;
-    padding-left: 10px;
-    outline: none;
-}
-
-.div_form > form > input:focus{
-    border: 1px solid green;
-}
-.div_form button{
-    width: 25%;
-    height: 40px;
-    border-radius: 10px ;
-    border: 1px solid #ccc;
-}
-.div_form button:hover{
-    background: linear-gradient(#f69d3c, #3f87a6);
+.div_form > form > input {
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 70%;
+  font-size: 24px;
+  padding-left: 10px;
+  outline: none;
 }
 
-.price::before{
-    content: '$';
+.div_form > form > input:focus {
+  border: 1px solid green;
 }
-.price::after{
-    content: '.00';
+.div_form button {
+  width: 25%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.div_form button:hover {
+  background: linear-gradient(#f69d3c, #3f87a6);
+}
+.title-menu{
+    text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  
+}
+.card {
+  width: 80%;
+  height: 400px;
+  border: 1px solid #ccc;
+  min-width: 280px;
+  /* box-shadow: 0px 0px 10px #ccc; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+.card > h3{
+    margin-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px #ccc;
+}
+.card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;    
+    bottom: 0px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: aliceblue;
+  }
+  .title-menu{
+    text-align: center;
+    }
+  .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu_a{
+    margin: 0 auto;
+  }
+  .card {
+    width: 40%;
+  }
+}
+@media (min-width: 900px) {
+    .card{
+        width: 30%;
+    }
 }
