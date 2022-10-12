@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    /* outline: none; */
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    /* border: 1px solid rgba(23, 245, 53, 0); */
+    margin-right: 10px;
+}
+
+
+.img{
+    
+    margin: 10px;
+
+}
+p{
+    text-align: justify;
+    font-size: 14px;
+
+}
