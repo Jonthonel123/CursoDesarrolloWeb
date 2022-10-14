@@ -10,8 +10,6 @@ boton.onclick = async function(){
     console.log(data);
     getMovies(data.Search)
 }
-
-
 async function getMovies(cards){
     row.innerHTML=""
     cards.forEach((movie,index)=>{
@@ -25,6 +23,5 @@ async function getMovies(cards){
         </div>     
         `
     })
-
 }
 

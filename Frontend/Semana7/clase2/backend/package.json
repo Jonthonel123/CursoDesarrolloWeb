@@ -1,0 +1,11 @@
+{
+  "name": "app-node",
+  "version": "1.0.0",
+  "description": "Este es mi primer proyecto en Node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jonthonel",
+  "license": "ISC"
+}

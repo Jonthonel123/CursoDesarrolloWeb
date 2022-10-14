@@ -23,19 +23,47 @@ const posts = [
     },
 ];
 
-const findPostById = (id,callback)=>{
-    const post= posts.find(item=> item.id ===id)
-    if(post){
-        callback(null,post)
-    }else{
-        //en el error
-        callback("no se encontro el post con id " + id)
-    }
+const findPostById = (id) =>
+    new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const post = posts.find((item) => item.id === id);
+            post ? resolve(post) : reject("No encontrado por id: " + id);
+        }, 2000);
+    });
+
+// findPostById(1)
+//     .then((post) => console.log(post))
+//     .catch((e) => console.log(e));
+
+const buscar = async (id) =>{
+    try {
+
+        const rePosts = await Promise.all([findPostById(1), findPostById(2)]);
+        // const post = await findPostById(id)
+        console.log(rePosts)
+    } catch (error) {
+        console.log(error);
+    }   
 }
-findPostById(4,(err,post)=>{
-    if(err){
-        return console.log(err);
-    }
-    console.log(post);
-})
+buscar(4)
+
+console.log("Fin de todo");
+
+
+
+// const findPostById = (id,callback)=>{
+//     const post= posts.find(item=> item.id ===id)
+//     if(post){
+//         callback(null,post)
+//     }else{
+//         //en el error
+//         callback("no se encontro el post con id " + id)
+//     }
+// }
+// findPostById(4,(err,post)=>{
+//     if(err){
+//         return console.log(err);
+//     }
+//     console.log(post);
+// })
 
