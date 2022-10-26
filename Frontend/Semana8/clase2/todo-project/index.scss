@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+body{
+    background-color: black;
+    color: $color-primario;
+    font-family: $font-title;
+}
+h1{
+    text-align: center;
+}
+main{
+    width: 560px;
+    margin: auto;
+}
+.container__form{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    input{
+        padding: 10px;
+        width: 320px;
+        border-radius: 8px;
+        border:0.5 solid;
+        &:hover{
+            border: solid 1px $color-primario;
+        }
+    }
+}
+// mixins: Es una funcion de Sass nos permite crear bloques de
+// estilos pero estos pueden ser parametrisables
+
+@mixin taskcard($color: red,$text-color:#fff) {
+    color: $text-color;
+    background-color: $color;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.container__tasks{
+    .task__end{
+        @include taskcard($color:rgb(101, 255, 121),$text-color:#000)
+    }
+    .task__in__progress{
+        @include taskcard($color: rgb(123, 56, 247))
+    }
+    .task__delete{
+        @include taskcard()
+    }
+}
