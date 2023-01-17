@@ -1,0 +1,47 @@
+<mxfile host="65bd71144e">
+    <diagram id="nskFCJ8U1rXA8nsQ46ex" name="Page-1">
+        <mxGraphModel dx="820" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;fontSize=15;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;div style=&quot;text-align: center ; font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Animales&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;- N° patas&lt;br&gt;- onomatopeyas&lt;br&gt;- color_pelaje&lt;br&gt;- tipo_cola&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;- raza&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="80" width="130" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;fontSize=15;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="450" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;fontSize=17;" edge="1" parent="1" source="3" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;fontSize=17;" edge="1" parent="1" source="3" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;/blockquote&gt;&lt;h1&gt;&lt;b style=&quot;font-size: 18px&quot;&gt;Animales del Hogar&lt;/b&gt;&lt;/h1&gt;- Nuevos" style="whiteSpace=wrap;html=1;align=left;rounded=1;spacing=7;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="60" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;fontSize=17;" edge="1" parent="1" source="5" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 17px&quot;&gt;&lt;b&gt;Animales de la Selva&lt;/b&gt;&lt;/font&gt;&lt;br&gt;- Nuevos" style="whiteSpace=wrap;html=1;align=left;rounded=1;spacing=7;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="250" width="160" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Perro" style="whiteSpace=wrap;html=1;align=left;rounded=1;spacingTop=0;spacing=7;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="95" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Gato" style="whiteSpace=wrap;html=1;align=left;rounded=1;spacing=7;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Leon" style="whiteSpace=wrap;html=1;align=left;rounded=1;spacing=7;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

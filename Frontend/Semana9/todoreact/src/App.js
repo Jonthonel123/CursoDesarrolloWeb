@@ -1,45 +1,13 @@
-import { useState, useEffect } from "react";
-import { TaskForm, TaskCard } from "./components";
-import { get, post, update } from "./services";
-
+import Router from "./routes";
+import { AuthProvider } from "./context/AuthContext";
+import { BookProvider } from "./context/BookContext";
 function App() {
-  const [taskList, setTaskList] = useState([]);
-
-  async function getTasks() {
-    const task = await get();
-    setTaskList(task);
-  }
-
-  async function addTask(text) {
-    const newTask = { name: text, status: 1 };
-    await post(newTask);
-    getTasks();
-  }
-
-  async function updateTask(id) {
-    const body = { status: 2 };
-    await update(id, body);
-    await getTasks();
-  }
-
-  useEffect(() => {
-    getTasks();
-    // que provoca el []: Que se ejecute solo una vez
-  }, []);
-
   return (
-    <div className="container my-5">
-      <h1 className="display-3">Todo App</h1>
-      <TaskForm onSubmitFunction={addTask} />
-      <div className="text-primary">
-        <hr />
-      </div>
-      <div className="mt-5">
-        {taskList.map((task, index) => (
-          <TaskCard key={index} task={task} updateTask={updateTask} />
-        ))}
-      </div>
-    </div>
+    <AuthProvider>
+      <BookProvider>
+        <Router />
+      </BookProvider>
+    </AuthProvider>
   );
 }
 
